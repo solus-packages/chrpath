@@ -1,0 +1,36 @@
+<PISI>
+    <Source>
+        <Name>chrpath</Name>
+        <Packager>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>programming.tools</PartOf>
+        <Summary xml:lang="en">Change runtime-path in ELF binaries</Summary>
+        <Description xml:lang="en">Change the rpath (runtime-path) of compiled ELF binaries and libraries
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>chrpath</Name>
+        <Summary xml:lang="en">Change runtime-path in ELF binaries</Summary>
+        <Description xml:lang="en">Change the rpath (runtime-path) of compiled ELF binaries and libraries
+</Description>
+        <PartOf>programming.tools</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="man">/usr/share/man</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2016-09-25</Date>
+            <Version>0.16</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Ikey Doherty</Name>
+            <Email>ikey@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>

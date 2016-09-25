@@ -1,0 +1,17 @@
+name       : chrpath
+version    : 0.16
+release    : 1
+source     :
+    - https://alioth.debian.org/frs/download.php/latestfile/813/chrpath-0.16.tar.gz : bb0d4c54bac2990e1bdf8132f2c9477ae752859d523e141e72b3b11a12c26e7b
+license    : GPL-2.0
+component  : programming.tools
+summary    : Change runtime-path in ELF binaries
+description: |
+    Change the rpath (runtime-path) of compiled ELF binaries and libraries
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
+    mv $installdir/usr/doc $installdir/usr/share/.
